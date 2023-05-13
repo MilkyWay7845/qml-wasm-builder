@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/source">
+        <file>main.qml</file>
+        <file>ScaleAnimationPage.qml</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/burger-menu.svg</file>
+        <file>icons/moon.svg</file>
+        <file>icons/sun.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,17 @@
+{
+  "name": "synaps",
+  "version": "1.0.0",
+  "description": "build",
+  "scripts": {
+    "run:desktop": "node build-win.js --version=5.15.2 --platform=Desktop --build-type=Release",
+    "clear:desktop": "node clear.js --version=5.15.2 --platform=Desktop --build-type=Release",
+    "run:wasm": "node build-wasm.js --version=5.15.2 --platform=Wasm --build-type=Release"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-spinners": "^2.8.0",
+    "minimist": "^1.2.8"
+  }
+}
