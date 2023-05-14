@@ -11,7 +11,7 @@ const version = argv.version
 const platform = argv.platform
 const buildType = argv['build-type']
 
-const projectName = 'AnimationDemo'
+const projectName = argv['project-name']
 const absolutePath = process.cwd()
 
 const outDir = `prebuilt/${platform}`

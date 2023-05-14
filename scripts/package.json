@@ -1,11 +1,10 @@
 {
-  "name": "synaps",
+  "name": "animationDemo",
   "version": "1.0.0",
   "description": "build",
   "scripts": {
-    "run:desktop": "node build-win.js --version=5.15.2 --platform=Desktop --build-type=Release",
-    "clear:desktop": "node clear.js --version=5.15.2 --platform=Desktop --build-type=Release",
-    "run:wasm": "node build-wasm.js --version=5.15.2 --platform=Wasm --build-type=Release"
+    "run:desktop": "node build-win.js --version=5.15.2 --platform=Desktop --build-type=Release --project-name=AnimationDemo",
+    "run:wasm": "node build-wasm.js --version=5.15.2 --platform=Wasm --build-type=Release --project-name=AnimationDemo"
   },
   "author": "",
   "license": "ISC",

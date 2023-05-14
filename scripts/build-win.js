@@ -10,7 +10,7 @@ const version = argv.version
 const platform = argv.platform
 const buildType = argv['build-type']
 
-const projectName = 'AnimationDemo'
+const projectName = argv['project-name']
 const outDir = `prebuilt/${platform}`
 
 if (process.env.QT_PATH) {
@@ -52,10 +52,6 @@ const MODULES = [
     'libgcc_s_seh-1.dll',
     'libstdc++-6.dll',
     'libwinpthread-1.dll'
-]
-
-const LIBS = [
-
 ]
 
 const PLUGINS = [
@@ -113,18 +109,8 @@ function copyQmlPlugins() {
     })
 }
 
-/*
-function copyLibs() {
-    LIBS.forEach(lib => {
-        let libName = path.parse(path.basename(lib)).name
-        fs.copyFileSync(`../../build-AnimationDemo-${platform}_Qt_${major}_${middle}_${minor}_MinGW_64_bit-${buildType}/${libName}/src/release/${lib}`, `${outDir}/${lib}`)
-        console.log(`copy libs: ${chalk.green(lib)}`)  
-    })
-}
-*/
-
 function copyExeFile() {
-    fs.copyFileSync(`../../build-AnimationDemo-${platform}_Qt_${major}_${middle}_${minor}_MinGW_64_bit-${buildType}/release/${projectName}.exe`, `${outDir}/${projectName}.exe`)
+    fs.copyFileSync(`../../build-${projectName}-${platform}_Qt_${major}_${middle}_${minor}_MinGW_64_bit-${buildType}/release/${projectName}.exe`, `${outDir}/${projectName}.exe`)
     console.log(`copy exe: ${chalk.green(projectName)}`)
 }
 
@@ -154,7 +140,6 @@ async function main() {
     copyModules()
     copyPlugins()
     copyQmlPlugins()
-    //copyLibs()
     copyExeFile()
     console.log(chalk.green("SUCCESS!"))
     console.log(chalk.green(`Installing ${projectName}...`))
