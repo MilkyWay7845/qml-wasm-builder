@@ -2,10 +2,15 @@
     <qresource prefix="/source">
         <file>main.qml</file>
         <file>ScaleAnimationPage.qml</file>
+        <file>SpringAnimationPage.qml</file>
     </qresource>
     <qresource prefix="/icons">
         <file>icons/burger-menu.svg</file>
         <file>icons/moon.svg</file>
         <file>icons/sun.svg</file>
+        <file>icons/color.svg</file>
+        <file>icons/opacity.svg</file>
+        <file>icons/scale.svg</file>
+        <file>icons/spring.svg</file>
     </qresource>
 </RCC>

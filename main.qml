@@ -96,10 +96,10 @@ ApplicationWindow {
                     }
 
                     model: ListModel {
-                        ListElement { title: "ScaleAnimation"; source: "qrc:/source/ScaleAnimationPage.qml"; icon: "qrc:/icons/icons/sun.svg" }
-                        ListElement { title: "PathAnimation"; source: "qrc:/source/ScaleAnimationPage.qml"; icon: "qrc:/icons/icons/sun.svg" }
-                        ListElement { title: "ColorAnimation"; source: "qrc:/source/ScaleAnimationPage.qml"; icon: "qrc:/icons/icons/sun.svg" }
-                        ListElement { title: "OpacityAnimation"; source: "qrc:/source/ScaleAnimationPage.qml"; icon: "qrc:/icons/icons/sun.svg" }
+                        ListElement { title: "ScaleAnimation"; source: "qrc:/source/ScaleAnimationPage.qml"; icon: "qrc:/icons/icons/scale.svg" }
+                        ListElement { title: "SpringAnimation"; source: "qrc:/source/SpringAnimationPage.qml"; icon: "qrc:/icons/icons/spring.svg" }
+                        ListElement { title: "ColorAnimation"; source: "qrc:/source/ScaleAnimationPage.qml"; icon: "qrc:/icons/icons/color.svg" }
+                        ListElement { title: "OpacityAnimation"; source: "qrc:/source/ScaleAnimationPage.qml"; icon: "qrc:/icons/icons/opacity.svg" }
                     }
 
                     ScrollIndicator.vertical: ScrollIndicator { }
